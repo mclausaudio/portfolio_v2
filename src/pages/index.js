@@ -24,36 +24,46 @@ const DEFAULT_IMAGES = [
     id: '1',
     source: full01,
     thumbnail: thumb01,
-    caption: 'Photo 1',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'SutroFM.net',
+    description: 'Built with React, GatsbyJS & Styled-Components.',
+    link: 'https://www.sutrofm.net',
+    github: 'https://www.github.com/mclausaudio/sfm_v3',
   },
   {
     id: '2',
     source: full02,
     thumbnail: thumb02,
-    caption: 'Photo 2',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'Restaurant Marketing Site',
+    description: 'Built with React, Gatsby and Contentful.',
+    link: 'https://mc-restaurant-site.netlify.com/',
+    github: 'https://github.com/mclausaudio/gatsby-restaurant-site',
   },
   {
     id: '3',
     source: full03,
     thumbnail: thumb03,
-    caption: 'Photo 3',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'Plant Pal',
+    description: 'Full stack Python & Flask app with Jinja templating.',
+    link: 'https://plant-pal.herokuapp.com/',
+    github: 'https://github.com/Ghenet/PlantPal',
   },
   {
     id: '4',
     source: full04,
     thumbnail: thumb04,
-    caption: 'Photo 4',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'Oasis',
+    description: 'Full Stack "MERN" app.',
+    link: 'http://nameless-crag-43595.herokuapp.com/',
+    github: 'https://github.com/brandonmcastillo/Oasis-FrontEnd',
   },
   {
     id: '5',
     source: full05,
     thumbnail: thumb05,
-    caption: 'Photo 5',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'Pollux',
+    description: 'Express, Mongoose, EJS based voting app.',
+    link: 'https://pollux-votingapp.herokuapp.com/',
+    github: 'https://github.com/mclausaudio/voting-app',
   },
   {
     id: '6',
@@ -61,6 +71,8 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb06,
     caption: 'Photo 6',
     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    link: 'https://ambient-forum.herokuapp.com/posts',
+    github: 'https://github.com/mclausaudio/ambientforum',
   },
 ]
 
@@ -86,17 +98,31 @@ class HomeIndex extends React.Component {
               </h2>
             </header>
             <p>
-              Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc
-              nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae
-              lobortis tortor primis integer massa adipiscing id nisi accumsan
-              pellentesque commodo blandit enim arcu non at amet id arcu magna.
-              Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-              vulputate lorem neque cubilia.
+              Hello, my name is Michael. I'm a Full Stack Developer from San
+              Francisco, California. I'm the founder of an online radio station
+              called{' '}
+              <a href="https://www.sutrofm.net" target="_blank">
+                SutroFM.net
+              </a>{' '}
+              and a record label called{' '}
+              <a
+                href="https://www.soundcloud.com/silva-electronics"
+                target="_blank"
+              >
+                Silva Electronics.
+              </a>{' '}
+              I began teaching myself JavaScript in 2014 and continue to use it
+              as my primary programing language. I'm also a published musician,
+              with releases in a variety of formats ranging from 12" vinyl to
+              cassette to digital. Programming, technology and sound are
+              passions of mine and I am constantly seeking out new and creative
+              ways to fuse them to foster positive social change and
+              self-expression.
             </p>
             <ul className="actions">
               <li>
-                <a href="#" className="button">
-                  Learn More
+                <a href="#contact" className="button">
+                  Contact Me
                 </a>
               </li>
             </ul>
@@ -107,11 +133,21 @@ class HomeIndex extends React.Component {
 
             <Gallery
               images={DEFAULT_IMAGES.map(
-                ({ id, source, thumbnail, caption, description }) => ({
+                ({
+                  id,
                   source,
                   thumbnail,
                   caption,
                   description,
+                  link,
+                  github,
+                }) => ({
+                  source,
+                  thumbnail,
+                  caption,
+                  description,
+                  link,
+                  github,
                 })
               )}
             />
@@ -125,7 +161,7 @@ class HomeIndex extends React.Component {
             </ul>
           </section>
 
-          <section id="three">
+          <section id="contact">
             <h2>Get In Touch</h2>
             <p>
               Accumsan pellentesque commodo blandit enim arcu non at amet id
