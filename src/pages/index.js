@@ -164,9 +164,8 @@ class HomeIndex extends React.Component {
           <section id="contact">
             <h2>Get In Touch</h2>
             <p>
-              Accumsan pellentesque commodo blandit enim arcu non at amet id
-              arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
-              lorem vulputate lorem neque lorem ipsum dolor.
+              I'm always open to collaborating on new projects, whether they be
+              programming related or otherwise. Feel free to drop me a line!
             </p>
             <div className="row">
               <div className="8u 12u$(small)">

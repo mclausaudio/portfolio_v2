@@ -27,11 +27,12 @@ class Gallery extends Component {
         <article className="6u 12u$(xsmall) work-item" key={i}>
           <a
             className="image fit thumb"
-            href={obj.source}
-            onClick={e => {
-              e.preventDefault()
-              this.toggleLightbox(i)
-            }}
+            href={obj.link}
+            target="_blank"
+            // onClick={e => {
+            //   e.preventDefault()
+            //   this.toggleLightbox(i)
+            // }}
           >
             <img src={obj.thumbnail} />
           </a>
