@@ -204,11 +204,7 @@ class HomeIndex extends React.Component {
                   </div>
                   <ul className="actions">
                     <li className="form-submit">
-                      <input
-                        type="submit"
-                        onClick={e => e.preventDefault()}
-                        value="Send Message"
-                      />
+                      <input type="submit" value="Send Message" />
                     </li>
                   </ul>
                 </form>
