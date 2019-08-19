@@ -169,7 +169,13 @@ class HomeIndex extends React.Component {
             </p>
             <div className="row">
               <div className="8u 12u$(small)">
-                <form method="POST" name="contact" data-netlify="true">
+                <form
+                  method="POST"
+                  name="contact"
+                  action="/"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                >
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
@@ -198,7 +204,11 @@ class HomeIndex extends React.Component {
                   </div>
                   <ul className="actions">
                     <li className="form-submit">
-                      <input type="submit" value="Send Message" />
+                      <input
+                        type="submit"
+                        onClick={e => e.preventDefault()}
+                        value="Send Message"
+                      />
                     </li>
                   </ul>
                 </form>
