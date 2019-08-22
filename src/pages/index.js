@@ -173,9 +173,17 @@ class HomeIndex extends React.Component {
                   method="POST"
                   name="contact"
                   action="/"
-                  netlify
+                  data-netlify="true"
                   netlify-honeypot="bot-field"
                 >
+                  {/* div to detect bots */}
+                  <div hidden aria-hidden="true">
+                    <label>
+                      Don’t fill this out if you're human:
+                      <input name="bot-field" />
+                    </label>
+                  </div>
+                  {/* end bot protection div */}
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
@@ -191,6 +199,7 @@ class HomeIndex extends React.Component {
                         name="email"
                         id="email"
                         placeholder="Email"
+                        required
                       />
                     </div>
                     <div className="12u">
@@ -204,7 +213,7 @@ class HomeIndex extends React.Component {
                   </div>
                   <ul className="actions">
                     <li className="form-submit">
-                      <input type="submit" value="Send Message" />
+                      <button type="submit" value="Send Message" />
                     </li>
                   </ul>
                 </form>
