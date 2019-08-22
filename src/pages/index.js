@@ -169,20 +169,19 @@ class HomeIndex extends React.Component {
             </p>
             <div className="row">
               <div className="8u 12u$(small)">
-                <form
+                {/* <form
                   method="POST"
                   name="contact"
                   data-netlify="true"
                   netlify-honeypot="bot-field"
                 >
-                  {/* div to detect bots */}
                   <div hidden aria-hidden="true">
                     <label>
                       Don’t fill this out if you're human:
                       <input name="bot-field" />
                     </label>
                   </div>
-                  {/* end bot protection div */}
+
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
@@ -215,6 +214,36 @@ class HomeIndex extends React.Component {
                       <button type="submit" value="Send Message" />
                     </li>
                   </ul>
+                </form> */}
+
+                <form name="contact" method="POST" data-netlify="true">
+                  <p>
+                    <label>
+                      Your Name: <input type="text" name="name" />
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      Your Email: <input type="email" name="email" />
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      Your Role:{' '}
+                      <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                      </select>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      Message: <textarea name="message"></textarea>
+                    </label>
+                  </p>
+                  <p>
+                    <button type="submit">Send</button>
+                  </p>
                 </form>
               </div>
               <div className="4u 12u$(small)">
