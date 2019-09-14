@@ -169,11 +169,12 @@ class HomeIndex extends React.Component {
             </p>
             <div className="row">
               <div className="8u 12u$(small)">
-                {/* <form
+                <form
                   method="POST"
                   name="contact"
                   data-netlify="true"
                   netlify-honeypot="bot-field"
+                  onsubmit={e => alert('hit')}
                 >
                   <div hidden aria-hidden="true">
                     <label>
@@ -211,12 +212,19 @@ class HomeIndex extends React.Component {
                   </div>
                   <ul className="actions">
                     <li className="form-submit">
-                      <button type="submit" value="Send Message" />
+                      <input type="submit" value="Send Message">
+                        Send Message
+                      </input>
                     </li>
                   </ul>
-                </form> */}
+                </form>
 
-                <form name="contact2" method="POST" data-netlify="true">
+                {/* <form
+                  name="contact2"
+                  method="POST"
+                  data-netlify="true"
+                  onSubmit={e => e.preventDefault()}
+                >
                   <p>
                     <label>
                       Your Name: <input type="text" name="name" />
@@ -244,7 +252,7 @@ class HomeIndex extends React.Component {
                   <p>
                     <button type="submit">Send</button>
                   </p>
-                </form>
+                </form> */}
               </div>
               <div className="4u 12u$(small)">
                 <ul className="labeled-icons">
