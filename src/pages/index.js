@@ -169,20 +169,7 @@ class HomeIndex extends React.Component {
             </p>
             <div className="row">
               <div className="8u 12u$(small)">
-                <form
-                  method="POST"
-                  name="contact"
-                  data-netlify="true"
-                  netlify-honeypot="bot-field"
-                  onsubmit={e => alert('hit')}
-                >
-                  <div hidden aria-hidden="true">
-                    <label>
-                      Don’t fill this out if you're human:
-                      <input name="bot-field" />
-                    </label>
-                  </div>
-
+                <form method="POST" name="contact-form" data-netlify="true">
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
@@ -212,45 +199,10 @@ class HomeIndex extends React.Component {
                   </div>
                   <ul className="actions">
                     <li className="form-submit">
-                      <input type="submit" value="Send Message" />
+                      <input type="submit" name="submit" value="Send Message" />
                     </li>
                   </ul>
                 </form>
-
-                {/* <form
-                  name="contact2"
-                  method="POST"
-                  data-netlify="true"
-                  onSubmit={e => e.preventDefault()}
-                >
-                  <p>
-                    <label>
-                      Your Name: <input type="text" name="name" />
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Your Email: <input type="email" name="email" />
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Your Role:{' '}
-                      <select name="role[]" multiple>
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                      </select>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Message: <textarea name="message"></textarea>
-                    </label>
-                  </p>
-                  <p>
-                    <button type="submit">Send</button>
-                  </p>
-                </form> */}
               </div>
               <div className="4u 12u$(small)">
                 <ul className="labeled-icons">
