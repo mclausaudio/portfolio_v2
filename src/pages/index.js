@@ -99,19 +99,19 @@ class HomeIndex extends React.Component {
             </header>
             <p>
               Hello, my name is Michael. I'm a Full Stack Developer from San
-              Francisco, California. I'm the founder of an online radio station
-              called{' '}
+              Francisco, California. I'm the Lead Developer of an online radio
+              station called{' '}
               <a href="https://www.sutrofm.net" target="_blank">
                 SutroFM.net
               </a>{' '}
-              and a record label called{' '}
+              and founder of a record label called{' '}
               <a
                 href="https://www.soundcloud.com/silva-electronics"
                 target="_blank"
               >
                 Silva Electronics.
               </a>{' '}
-              I began teaching myself JavaScript in 2014 and continue to use it
+              I began teaching myself JavaScript in 2015 and continue to use it
               as my primary programing language. I'm also a published musician,
               with releases in a variety of formats ranging from 12" vinyl to
               cassette to digital. Programming, technology and sound are
@@ -122,7 +122,17 @@ class HomeIndex extends React.Component {
             <ul className="actions">
               <li>
                 <a href="#contact" className="button">
-                  Contact Me
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://docs.google.com/document/d/1LcO3XahdWxbp_RD70c5QNZnqXLglNc_8A7-F9d9cJ5s/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button"
+                >
+                  Resume
                 </a>
               </li>
             </ul>
@@ -214,7 +224,9 @@ class HomeIndex extends React.Component {
                   </div>
                   <ul className="actions">
                     <li className="form-submit">
-                      <button>Submit</button>
+                      <button type="submit" className="button">
+                        Submit
+                      </button>
                     </li>
                   </ul>
                 </form>
@@ -225,17 +237,11 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-home">
                       <span className="label">Address</span>
                     </h3>
-                    1234 Somewhere Rd.
+                    Inner Sunset District
                     <br />
                     San Francisco, CA 94122
                     <br />
                     United States
-                  </li>
-                  <li>
-                    <h3 className="icon fa-mobile">
-                      <span className="label">Phone</span>
-                    </h3>
-                    000-000-0000
                   </li>
                   <li>
                     <h3 className="icon fa-envelope-o">

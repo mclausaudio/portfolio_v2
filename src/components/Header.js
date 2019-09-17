@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Footer from './Footer'
-import avatar from '../assets/images/avatar.jpg'
+import avatar from '../assets/images/cropped.png'
 
 class Header extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class Header extends React.Component {
             <img src={avatar} alt="Michael Claus photo" />
           </a>
           <h1>
-            <strong>I am Michael</strong>, a software developer <br />
+            <strong>Hello! I'm Michael</strong>, a software developer <br />
             and sound designer from San Francisco, CA.
             <br />
           </h1>
