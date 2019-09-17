@@ -173,7 +173,8 @@ class HomeIndex extends React.Component {
                   method="post"
                   name="contact-form"
                   data-netlify="true"
-                  data-netlify-honeypot="bot-field"
+                  netlify-honeypot="bot-field"
+                  action="/"
                 >
                   <input
                     type="hidden"
