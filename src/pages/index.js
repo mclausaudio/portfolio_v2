@@ -169,7 +169,12 @@ class HomeIndex extends React.Component {
             </p>
             <div className="row">
               <div className="8u 12u$(small)">
-                <form method="post" name="contact-form" netlify>
+                <form
+                  method="post"
+                  name="contact-form"
+                  data-netlify="true"
+                  action="/"
+                >
                   <div className="row uniform 50%">
                     <div className="6u 12u$(xsmall)">
                       <input
