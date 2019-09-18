@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
+import Header from '../components/Header'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
@@ -83,6 +84,7 @@ class HomeIndex extends React.Component {
 
     return (
       <Layout>
+        <Header />
         <Helmet>
           <title>{siteTitle}</title>
           <meta name="description" content={siteDescription} />
@@ -184,6 +186,7 @@ class HomeIndex extends React.Component {
                   name="contact-form"
                   data-netlify="true"
                   netlify-honeypot="bot-field"
+                  action="/thankyou"
                 >
                   <input
                     type="hidden"
