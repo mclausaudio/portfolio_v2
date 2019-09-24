@@ -29,12 +29,13 @@ class Gallery extends Component {
             className="image fit thumb"
             href={obj.link}
             target="_blank"
+            rel="noopener noreferrer"
             // onClick={e => {
             //   e.preventDefault()
             //   this.toggleLightbox(i)
             // }}
           >
-            <img src={obj.thumbnail} />
+            <img src={obj.thumbnail} style={{ height: '12rem' }} />
           </a>
 
           <h3>{obj.caption}</h3>
@@ -61,13 +62,13 @@ class Gallery extends Component {
     return (
       <div>
         {this.renderGallery(images)}
-        <ModalGateway>
+        {/* <ModalGateway>
           {lightboxIsOpen && (
             <Modal onClose={this.toggleLightbox}>
               <Carousel currentIndex={selectedIndex} views={images} />
             </Modal>
           )}
-        </ModalGateway>
+        </ModalGateway> */}
       </div>
     )
   }

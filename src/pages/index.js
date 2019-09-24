@@ -6,12 +6,12 @@ import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
 import Header from '../components/Header'
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
-import thumb04 from '../assets/images/thumbs/04.jpg'
-import thumb05 from '../assets/images/thumbs/05.jpg'
-import thumb06 from '../assets/images/thumbs/06.jpg'
+import sfm_v3 from '../assets/images/thumbs/sfm_v3.png'
+import eatery from '../assets/images/thumbs/eatery.png'
+import plant_pal from '../assets/images/thumbs/plant pal.png'
+import oasis from '../assets/images/thumbs/oasis.png'
+import pollux from '../assets/images/thumbs/polluxss.png'
+import natours from '../assets/images/thumbs/natours.png'
 
 import full01 from '../assets/images/fulls/01.jpg'
 import full02 from '../assets/images/fulls/02.jpg'
@@ -24,16 +24,25 @@ const DEFAULT_IMAGES = [
   {
     id: '1',
     source: full01,
-    thumbnail: thumb01,
+    thumbnail: sfm_v3,
     caption: 'SutroFM.net',
     description: 'Built with React, GatsbyJS & Styled-Components.',
     link: 'https://www.sutrofm.net',
     github: 'https://www.github.com/mclausaudio/sfm_v3',
   },
   {
+    id: '1',
+    source: full01,
+    thumbnail: natours,
+    caption: 'Natours',
+    description: 'Sass based landing page for fictional company.',
+    link: 'https://mc-nature-tours.netlify.com/',
+    github: 'https://github.com/mclausaudio/natours',
+  },
+  {
     id: '2',
     source: full02,
-    thumbnail: thumb02,
+    thumbnail: eatery,
     caption: 'Restaurant Marketing Site',
     description: 'Built with React, Gatsby and Contentful.',
     link: 'https://mc-restaurant-site.netlify.com/',
@@ -42,16 +51,16 @@ const DEFAULT_IMAGES = [
   {
     id: '3',
     source: full03,
-    thumbnail: thumb03,
+    thumbnail: plant_pal,
     caption: 'Plant Pal',
-    description: 'Full stack Python & Flask app with Jinja templating.',
+    description: 'Python & Flask app with Jinja templating.',
     link: 'https://plant-pal.herokuapp.com/',
     github: 'https://github.com/Ghenet/PlantPal',
   },
   {
     id: '4',
     source: full04,
-    thumbnail: thumb04,
+    thumbnail: oasis,
     caption: 'Oasis',
     description: 'Full Stack "MERN" app.',
     link: 'http://nameless-crag-43595.herokuapp.com/',
@@ -60,20 +69,11 @@ const DEFAULT_IMAGES = [
   {
     id: '5',
     source: full05,
-    thumbnail: thumb05,
+    thumbnail: pollux,
     caption: 'Pollux',
     description: 'Express, Mongoose, EJS based voting app.',
     link: 'https://pollux-votingapp.herokuapp.com/',
     github: 'https://github.com/mclausaudio/voting-app',
-  },
-  {
-    id: '6',
-    source: full06,
-    thumbnail: thumb06,
-    caption: 'Photo 6',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-    link: 'https://ambient-forum.herokuapp.com/posts',
-    github: 'https://github.com/mclausaudio/ambientforum',
   },
 ]
 
@@ -103,13 +103,18 @@ class HomeIndex extends React.Component {
               Hello, my name is Michael. I'm a Full Stack Developer from San
               Francisco, California. I'm the Lead Developer of an online radio
               station called{' '}
-              <a href="https://www.sutrofm.net" target="_blank">
+              <a
+                href="https://www.sutrofm.net"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 SutroFM.net
               </a>{' '}
               and founder of a record label called{' '}
               <a
                 href="https://www.soundcloud.com/silva-electronics"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Silva Electronics.
               </a>{' '}
@@ -141,7 +146,7 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="two">
-            <h2>Recent Work</h2>
+            <h2>Web Development Projects</h2>
 
             <Gallery
               images={DEFAULT_IMAGES.map(
@@ -166,8 +171,13 @@ class HomeIndex extends React.Component {
 
             <ul className="actions">
               <li>
-                <a href="#" className="button">
-                  Full Portfolio
+                <a
+                  href="https://github.com/mclausaudio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button"
+                >
+                  More on GitHub
                 </a>
               </li>
             </ul>
@@ -250,7 +260,9 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-envelope-o">
                       <span className="label">Email</span>
                     </h3>
-                    <a href="#">mclausaudio@gmail.com</a>
+                    <a href="mailto:mclausaudio@gmail.com">
+                      mclausaudio@gmail.com
+                    </a>
                   </li>
                 </ul>
               </div>
