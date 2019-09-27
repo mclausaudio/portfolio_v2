@@ -134,7 +134,7 @@ class HomeIndex extends React.Component {
               </li>
               <li>
                 <a
-                  href="https://docs.google.com/document/d/1LcO3XahdWxbp_RD70c5QNZnqXLglNc_8A7-F9d9cJ5s/edit?usp=sharing"
+                  href="https://docs.google.com/document/d/1fZ3swDFtZbyuytFWZmCSES7jpkI4iFdluuAkDpykAUU/edit?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button"
