@@ -100,8 +100,8 @@ class HomeIndex extends React.Component {
               </h2>
             </header>
             <p>
-              Hello, my name is Michael. I'm a Full Stack Developer from San
-              Francisco, California. I'm the Lead Developer of an online radio
+              Hello, my name is Michael. I'm a Software Developer from San
+              Francisco, California. I am currently working as a Software Engineer at <a href='https://www.postman.com' target='_blank' rel='noreffer noopener'>Postman</a>. I'm also the founder and lead developer of an online radio
               station called{' '}
               <a
                 href="https://www.sutrofm.net"
@@ -109,15 +109,7 @@ class HomeIndex extends React.Component {
                 rel="noopener noreferrer"
               >
                 SutroFM.net
-              </a>{' '}
-              and founder of a record label called{' '}
-              <a
-                href="https://www.soundcloud.com/silva-electronics"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Silva Electronics.
-              </a>{' '}
+              </a>.
               I began teaching myself JavaScript in 2015 and continue to use it
               as my primary programing language. I'm also a published musician,
               with releases in a variety of formats ranging from 12" vinyl to
@@ -127,14 +119,14 @@ class HomeIndex extends React.Component {
               self-expression.
             </p>
             <ul className="actions">
-              <li>
+              {/* <li>
                 <a href="#contact" className="button">
                   Contact
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
-                  href="https://docs.google.com/document/d/1fZ3swDFtZbyuytFWZmCSES7jpkI4iFdluuAkDpykAUU/edit?usp=sharing"
+                  href="https://docs.google.com/document/d/1rvoSJ9z4dF4LoWEhLi5NUgcjBiVVeCeMFaTVM7BQrU0/edit?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button"
@@ -142,9 +134,19 @@ class HomeIndex extends React.Component {
                   Resume
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://github.com/mclausaudio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button"
+                >
+                  GitHub
+                </a>
+              </li>
             </ul>
           </section>
-
+{/* 
           <section id="two">
             <h2>Web Development Projects</h2>
 
@@ -181,7 +183,7 @@ class HomeIndex extends React.Component {
                 </a>
               </li>
             </ul>
-          </section>
+          </section> */}
 
           <section id="contact">
             <h2>Get In Touch</h2>
@@ -250,9 +252,9 @@ class HomeIndex extends React.Component {
                     <h3 className="icon fa-home">
                       <span className="label">Address</span>
                     </h3>
-                    Inner Sunset District
+                    Nob Hill Area
                     <br />
-                    San Francisco, CA 94122
+                    San Francisco, CA 94109
                     <br />
                     United States
                   </li>
